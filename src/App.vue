@@ -1,45 +1,34 @@
+
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
-    <h1>{{ total }}</h1>
-    <div class="row">
-      <div class="col-3">
-        <counter lable="ok" @cc="sum" />
-      </div>
-      <div class="col-3">
-        <counter lable="ชอบ" @cc="sum" />
-      </div>
-      <div class="col-3">
-        <counter lable="อะหยังครับจารย์" @cc="sum" />
-      </div>
-      <div class="col-3">
-        <counter lable="55555" @cc="sum" />
-      </div>
+  <div id="app" class="bg-secondary ">
+  <img alt="Vue logo" src="./assets/logo.png">
+      <div class="row mb-5 mt-3">
+                <div class="mt-2 mr-auto ml-1 mb-2">
+              
+                </div>
+                <div class="">
+                
+                </div>
+                <div class="card-body">
+                    <CsButton></CsButton>
+                </div>
     </div>
-    ชื่อ-นามสกุล <input type="text" v-model="nam">  
-    รหัส นศ  <input type="text" v-model="code"/>
-    GPA <input type="number" v-model="gpa" step="0.01"/>
-    {{name}}{{code}}{{GPA}}
+    
   </div>
 </template>
 
 <script>
-import HelloWorld from "/src/components/HelloWorld.vue";
-import Counter from "/src/components/Counter.vue";
+import CsButton from "./components/CsButton";
 export default {
   name: "App",
   components: {
-    HelloWorld,
-    Counter,
+    // eslint-disable-next-line no-undef
+    CsButton
   },
 
   data: function () {
     return {
       total: 0,
-      name:'',
-      code:'',
-      GPA:0.0,
     }
   },
   methods: {
@@ -56,7 +45,38 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: blue;
   margin-top: 60px;
+}
+h3#nav {
+    text-align: left;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.logo {
+    width: 30px;
+}
+
+.logofooter {
+    width: 80px;
+    margin: 10px;
+}
+
+footer {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+p.box {
+    width: 150px;
+    white-space:initial;
+    white-space:normal;
+    text-align: center;
+    word-wrap: break-word;
+    margin: auto;
+}
+.icon{
+    width: 35px;
+    margin: 5px;
+
 }
 </style>
