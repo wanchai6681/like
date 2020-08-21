@@ -1,13 +1,13 @@
 
 <template>
   <div id="app" class="bg-secondary ">
-  <img alt="Vue logo" src="./assets/logo.png">
+  <img alt="Vue logo" src="./assets/Edit.jpg" class="img-fluid white=150x150px">
       <div class="row mb-5 mt-3">
                 <div class="mt-2 mr-auto ml-1 mb-2">
               
                 </div>
                 <div class="">
-                
+               
                 </div>
                 <div class="card-body">
                     <CsButton></CsButton>
